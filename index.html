@@ -5,56 +5,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code</title>
+  <title>Document</title>
+
   <script src="./mainjs.js">
   </script>
+  <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 
 <body>
-  <from>
-    <div>
+  <div class="container">
+    <form id="inputfrom" action="" method="post">
+      <h3>Uluru</h3>
+      <br>
       <label><strong>Step1</strong></label>
-    </div>
-    <div>
-      <label>
-        Set landing area size:
-      </label>
-      <input id="landingsize" value="5 5">
-    </div>
 
-    <br />
 
-    <div>
+      <fieldset>
+        <label> Set landing area size: (e.g. 5x5,type:5 5)</label>
+        <input type="text" id="landingsize" value="5 5">
+      </fieldset>
+
       <label><strong>Step2</strong></label>
-    </div>
+      <fieldset>
+        <label>
+          Set Robot1 start place and facing side:(e.g. 1 2 N)
+        </label>
+        <input type="text" id="robotStartPosition" value="1 2 N">
+      </fieldset>
 
-    <div>
-      <label>
-        Set Robot1 start place and facing side:
-      </label>
-      <input id="robotStartPosition" value="1 2 N">
-    </div>
+      <fieldset>
+        <label>Robot1 Move step: (e.g. LMLMLMLMM)</label>
+        <input type="text" id="robotMoveStep" value="LMLMLMLMM">
+      </fieldset>
 
-    <div>
-      <label>Robot1 Move step:</label>
-      <input id="robotMoveStep" value="LMLMLMLMM">
-    </div>
+      <fieldset>
+        <label>
+          Set Robot2 start place and facing side:(e.g. 3 3 E)
+        </label>
+        <input type="text" id="robotStartPosition2" value="3 3 E">
+      </fieldset>
 
-    <br />
-    <button id="button" type="button">Check</button>
-  </from>
+      <fieldset>
+        <label>Robot2 Move step: (e.g. MMRMMRMRRM)</label>
+        <input type="text" id="robotMoveStep2" value="MMRMMRMRRM">
+      </fieldset>
 
-  <div>
-    <br />
-    <label>
-      Robot1 stop Position and facing side:
-    </label>
-    <div id="robotStopPosition">
-    </div>
+
+
+
+      <fieldset>
+        <button name="submit" type="button" id="button">Submit</button>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Robot1 stop Position and facing side:
+        </label>
+        <div id="robotStopPosition">
+        </div>
+
+        <label>
+          Robot2 stop Position and facing side:
+        </label>
+        <div id="robotStopPosition2">
+        </div>
+      </fieldset>
+
+    </form>
   </div>
-
-
-
 </body>
 
 </html>
